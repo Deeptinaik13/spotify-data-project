@@ -12,6 +12,7 @@
 						"value": "@pipeline().parameters.input_for_the_loop",
 						"type": "Expression"
 					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "SQLtoADLS",
@@ -322,7 +323,7 @@
 		"parameters": {
 			"input_for_the_loop": {
 				"type": "array",
-				"defaultValue": "{   {     \"schema\" : \"dbo\",     \"table\" : \"SpotifyUser\",     \"cdc_col\" : \"updated_at\",     \"from_date\" : \"\"   }   {     \"schema\" : \"dbo\",     \"table\" : \"SongDate\",     \"cdc_col\" : \"date\",     \"from_date\" : \"\"   }   {     \"schema\" : \"dbo\",     \"table\" : \"Artist\",     \"cdc_col\" : \"updated_at\",     \"from_date\" : \"\"   }   {     \"schema\" : \"dbo\",     \"table\" : \"Track\",     \"cdc_col\" : \"updated_at\",     \"from_date\" : \"\"   }   {     \"schema\" : \"dbo\",     \"table\" : \"FactStream\",     \"cdc_col\" : \"stream_timestamp\",     \"from_date\" : \"\"   } }"
+				"defaultValue": "{   {     \"schema\" : \"dbo\",     \"table\" : \"SpotifyUser\",     \"cdc_col\" : \"updated_at\",     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"SongDate\",     \"cdc_col\" : \"date\",     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"Artist\",     \"cdc_col\" : \"updated_at\",     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"Track\",     \"cdc_col\" : \"updated_at\",     \"from_date\" : \"\"   },   {     \"schema\" : \"dbo\",     \"table\" : \"FactStream\",     \"cdc_col\" : \"stream_timestamp\",     \"from_date\" : \"\"   } }"
 			}
 		},
 		"variables": {

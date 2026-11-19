@@ -249,7 +249,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"layer": "bronzelayer",
-										"folder": "cdc",
+										"folder": {
+											"value": "@{pipeline().parameters.table}_last_value",
+											"type": "Expression"
+										},
 										"file": "empty.json"
 									}
 								}

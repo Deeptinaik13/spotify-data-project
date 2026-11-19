@@ -4,25 +4,25 @@
     "table" : "SpotifyUser",
     "cdc_col" : "updated_at",
     "from_date" : ""
-  }
+  },
   {
     "schema" : "dbo",
     "table" : "SongDate",
     "cdc_col" : "date",
     "from_date" : ""
-  }
+  },
   {
     "schema" : "dbo",
     "table" : "Artist",
     "cdc_col" : "updated_at",
     "from_date" : ""
-  }
+  },
   {
     "schema" : "dbo",
     "table" : "Track",
     "cdc_col" : "updated_at",
     "from_date" : ""
-  }
+  },
   {
     "schema" : "dbo",
     "table" : "FactStream",
